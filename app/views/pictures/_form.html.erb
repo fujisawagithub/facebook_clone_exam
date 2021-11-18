@@ -11,24 +11,24 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
+  <div class="field_title">
+    <%= form.label :タイトル %>
     <%= form.text_field :title %>
   </div>
 
-  <div class="field">
-    <%= form.label :content %>
+  <div class="field_content">
+    <%= form.label :内容 %>
     <%= form.text_area :content %>
   </div>
 
-  <div class="field">
-    <%= form.label :image %>
+  <div class="field_image">
     <%= image_tag(@picture.image.url) if @picture.image && @picture.image.url %>
     <%= form.file_field :image %>
     <%= form.hidden_field :image_cache %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit :確認 %>
   </div>
+  <%= link_to '戻る', pictures_path %>
 <% end %>

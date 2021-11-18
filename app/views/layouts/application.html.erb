@@ -39,8 +39,8 @@
         <i class="fas fa-sign-out-alt"></i>
         <%= link_to "ログアウト", session_path(current_user.id), method: :delete %></button></li>
     <% else %>
-      <%= link_to "Sign up", new_user_path %>
-      <%= link_to "Login", new_session_path %>
+      <%= link_to "アカウント作成", new_user_path %>
+      <%= link_to "ログイン", new_session_path %>
     <% end %>
     <%= yield %>
     </ul>
