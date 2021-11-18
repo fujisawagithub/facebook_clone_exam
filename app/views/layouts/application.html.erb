@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
   </head>
   <header>
   <p>Facebook Clone</p>
@@ -17,17 +19,31 @@
       <%= content_tag(:div, value, class: "#{key}") %>
     <% end %>
     <% if logged_in? %>
-      <ul class = "row">
-      <li class = "col-md-4">
-      <%= link_to "投稿一覧", pictures_path %></li>
-      <li class = "col-md-4">
-      <%= link_to "Profile", user_path(current_user.id) %></li>
-      <%= link_to "Logout", session_path(current_user.id), method: :delete %>
+    <nav class="menu">
+      <ul class="row">
+        <li class="col-md-3">
+        <button type="button" class="btn btn-outline-primary">
+        <i class="fas fa-home"></i>
+        <%= link_to "投稿一覧", pictures_path %></button></li>
+        <li class="col-md-3">
+        <button type="button" class="btn btn-outline-primary">
+        <i class="fas fa-user-check"></i>
+        <%= link_to "詳細確認", user_path(current_user.id) %></button></li>
+        <li class="col-md-3">
+        <button type="button" class="btn btn-outline-primary">
+        <i class="far fa-paper-plane"></i>
+        <%= link_to '投稿', new_picture_path %></li></button></li>
+        <li class="col-md-3">
+        <button type="button" class="btn btn-outline-primary">
+        <i class="fas fa-sign-out-alt"></i>
+        <%= link_to "ログアウト", session_path(current_user.id), method: :delete %></button></li>
     <% else %>
       <%= link_to "Sign up", new_user_path %>
       <%= link_to "Login", new_session_path %>
     <% end %>
     <%= yield %>
+    </ul>
+    </nav>
     </div>
   </body>
   <footer>
