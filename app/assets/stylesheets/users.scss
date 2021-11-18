@@ -1,3 +1,10 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.users_name {
+    font-weight: bold;
+    color: #6091d3;
+    background: #FFF;
+    border: solid 2px #3B5998;
+  }
+.users_email {
+   font-size: 2rem;
+   padding-left: 20px;
+  }
