@@ -4,71 +4,72 @@
  *= require_self
  */
 
- html {
-    font-size: 50%;
-    height: 100%;
-  }
+html {
+  font-size: 50%;
+  height: 100%;
+}
 
- header {
-    width: 100%;
-    height: 100px;
-    background-color: #3B5998;
-    font-size: 1.5rem;
-  }
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #3B5998;
+  font-size: 1.5rem;
+}
 
 .image {
-    width: 80px;
-    margin: 0;
-    float: left;
-    padding-top: 15px;
-    padding-left: 5px;
+  width: 80px;
+  margin: 0;
+  float: left;
+  padding-top: 15px;
+  padding-left: 5px;
 }
 
- header p {
-    font-size: 3rem;
-    color: #fff;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-top: 30px;
-    padding-left: 20px;
-    float: left;
-  }
-
-  body {
-    height: 100%;
-  }
-
-  .container {
-    width: 100%;
-    margin: auto;
-    position: relative;
-    min-height: 100%;
-    padding-bottom: 150px;
-  }
-
-  .menu li {
-    font-size: 1rem;
-    background-color:#0f0f0f;
-    color:#fff;
-    padding:5% 10%;
-    text-align:center;
-    list-style: none;
-    background-color: #ffffff;
+header p {
+  font-size: 3rem;
+  color: #fff;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 20px;
+  float: left;
 }
 
-  footer{
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    bottom: auto;
-    background-color: #3B5998;
-  }
-  footer p {
-    font-size: 1.5rem;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-  }
+body {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 150px;
+}
+
+.menu li {
+  font-size: 1rem;
+  background-color: #0f0f0f;
+  color: #fff;
+  padding: 5% 10%;
+  text-align: center;
+  list-style: none;
+  background-color: #ffffff;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: auto;
+  background-color: #3B5998;
+}
+
+footer p {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}

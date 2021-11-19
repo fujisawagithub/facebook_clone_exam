@@ -1,23 +1,26 @@
 .users_name {
-    font-weight: bold;
-    color: #6091d3;
-    background: #FFF;
-  }
-.users_email {
-   font-size: 2rem;
-   padding-left: 20px;
+  font-weight: bold;
+  color: #6091d3;
+  background: #FFF;
   }
 
-  .sign_page {
-    width: 100%;
-    height: 100px;
+.users_email {
+ font-size: 2rem;
+ padding-left: 20px;
 }
+
+.sign_page {
+  width: 100%;
+  height: 100px;
+}
+
 .row {
-    list-style: none;
+  list-style: none;
 }
+
 .create_button {
-    list-style: none;
-    float: auto;
-    padding-left: 50%;
-    padding-right:50%;
+  list-style: none;
+  float: auto;
+  padding-left: 50%;
+  padding-right:50%;
 }
