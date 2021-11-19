@@ -4,7 +4,7 @@
     <h2><%= pluralize(@user.errors.count, "error") %> prohibited this <%= @user.name %> from being saved:</h2>
     <ul>
     <% @user.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
+    <li><%= message %></li>
     <% end %>
     </ul>
   </div>
@@ -24,6 +24,6 @@
   <%= f.label :パスワード再確認 %>
   <%= f.password_field :password_confirmation %></li>
   </div>
-    <li class="create_button">
+  <li class="create_button">
   <%= f.submit "Create my account" %></li>
 <% end %>
