@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
-  skip_before_action :login_required, only: [:new, :create]
-  def new
-  end
+  skip_before_action :login_required, only: %i[new create]
+  def new; end
+
   def create
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
@@ -12,6 +12,7 @@ class SessionsController < ApplicationController
       render :new
     end
   end
+
   def destroy
     session.delete(:user_id)
     flash[:notice] = 'ログアウトしました'
